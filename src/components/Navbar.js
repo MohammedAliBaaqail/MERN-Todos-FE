@@ -44,8 +44,8 @@ const handleFirstColorChange = (e) => {
 const handleSecondColorChange = (e) => {
   
   setSecondColor(e.target.value)
-  setSecondColorDark(darkenColor(e.target.value,15))
-  setSecondColorLight(lightenColor(e.target.value,12))
+  setSecondColorDark(darkenColor(e.target.value,7))
+  setSecondColorLight(lightenColor(e.target.value,10))
 }
 
 useEffect(() => {
@@ -54,8 +54,8 @@ useEffect(() => {
     document.documentElement.style.setProperty('--first-color-dark', darkenColor(firstColor, 30));
     document.documentElement.style.setProperty('--first-color-light', lightenColor(firstColor, 18));
     document.documentElement.style.setProperty('--second-color', secondColor);
-    document.documentElement.style.setProperty('--second-color-dark', darkenColor(secondColor, 14));
-    document.documentElement.style.setProperty('--second-color-light', lightenColor(secondColor, 13));
+    document.documentElement.style.setProperty('--second-color-dark', darkenColor(secondColor, 7));
+    document.documentElement.style.setProperty('--second-color-light', lightenColor(secondColor, 10));
   };
 
   updateColors();
