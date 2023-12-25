@@ -30,7 +30,7 @@ const TodoContainer = ({ todo ,hanndleSearch, isAdmin }) => {
 
     await sleep(500);
 
-    const response = await fetch(`https://mern-todos-be.onrender.com/todos/${isAdmin?'admin/':'basic/'}${todo._id}`, {
+    const response = await fetch(`https://mern-todos-be.adaptable.app/todos/${isAdmin?'admin/':'basic/'}${todo._id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${user.token}`,

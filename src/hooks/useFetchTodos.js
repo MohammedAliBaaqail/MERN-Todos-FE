@@ -12,7 +12,7 @@ export const useFetchTodos = () => {
   const fetchTodos = async (url, dispatchType) => {
     try {
       setIsLoading(true);
-      const response = await fetch(`https://mern-todos-be.onrender.com/todos/${url}`, {
+      const response = await fetch(`https://mern-todos-be.adaptable.app/todos/${url}`, {
         headers: { Authorization: `Bearer ${user.token}` },
       });
 
