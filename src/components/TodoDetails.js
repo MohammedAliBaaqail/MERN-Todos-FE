@@ -36,6 +36,8 @@ export default function TodoDetails({ todo, isAdmin }) {
             body: JSON.stringify({
               completed: updatedCompleted,
               completedAt: updatedCompletedAt,
+              title:title,
+              deadline:date
             }),
             headers: {
               "Content-Type": "application/json",
