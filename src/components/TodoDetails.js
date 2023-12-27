@@ -37,7 +37,7 @@ export default function TodoDetails({ todo, isAdmin }) {
               completed: updatedCompleted,
               completedAt: updatedCompletedAt,
               title:title,
-              deadline:date
+              date:date
             }),
             headers: {
               "Content-Type": "application/json",
