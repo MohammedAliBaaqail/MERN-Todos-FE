@@ -22,7 +22,7 @@ const TodoForm = ({ todo }) => {
 
     const todo = { title, date, description, username: user.username };
 
-    const response = await fetch("https://mern-todos-be.adaptable.app/todos/basic", {
+    const response = await fetch("https://mern-todos-be.onrender.com/todos/basic", {
       method: "POST",
       body: JSON.stringify(todo),
       headers: {

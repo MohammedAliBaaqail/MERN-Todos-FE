@@ -30,7 +30,7 @@ export default function TodoDetails({ todo, isAdmin }) {
         const updatedCompletedAt = updatedCompleted ? new Date() : null;
 
         const response = await fetch(
-          `https://mern-todos-be.adaptable.app/todos/${isAdmin ? "admin/" : "basic/"}${todo._id}`,
+          `https://mern-todos-be.onrender.com/todos/${isAdmin ? "admin/" : "basic/"}${todo._id}`,
           {
             method: "PATCH",
             body: JSON.stringify({
@@ -78,7 +78,7 @@ export default function TodoDetails({ todo, isAdmin }) {
     try {
       const updatedTodo = { title, date, description };
       const response = await fetch(
-        `https://mern-todos-be.adaptable.app/todos/${isAdmin ? "admin/" : "basic/"}${todo._id}`,
+        `https://mern-todos-be.onrender.com/todos/${isAdmin ? "admin/" : "basic/"}${todo._id}`,
         {
           method: "PATCH",
           body: JSON.stringify(updatedTodo),
@@ -125,7 +125,7 @@ export default function TodoDetails({ todo, isAdmin }) {
     await sleep(500);
 
     const response = await fetch(
-      `https://mern-todos-be.adaptable.app/todos/${isAdmin ? "admin/" : "basic/"}${todo._id}`,
+      `https://mern-todos-be.onrender.com/todos/${isAdmin ? "admin/" : "basic/"}${todo._id}`,
       {
         method: "DELETE",
         headers: {
