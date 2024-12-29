@@ -1,5 +1,5 @@
 {
-  "proxy": "https://mern-todos-be.adaptable.app/",
+  "proxy": "https://mern-todos-be.onrender.com/",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
